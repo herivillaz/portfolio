@@ -16,9 +16,17 @@ function Navbar() {
     <div className="collapse navbar-collapse flex-row-reverse bd-highlight" id="navbarNav">
       <ul className="nav navbar-nav pull-xs-right">
         <li className="nav-item active">
-          <a className="nav-link" href="../../pages/About.js">
-            <h5>About Me</h5> <span className="sr-only">(current)</span>
-          </a>
+          
+            <Link
+              to="/"
+              className={
+                window.location.pathname === "/" || window.location.pathname === "/about"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              <h5>About Me</h5>
+            </Link>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="portfolio.html">
