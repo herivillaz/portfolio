@@ -4,6 +4,7 @@ import "./style.css";
 
 // Depending on the current path, this component sets the "active" className on the appropriate navigation link item
 function Navbar() {
+  console.log(window.location.pathname);
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-info">
     <a className="navbar-brand" href="#">
@@ -15,7 +16,7 @@ function Navbar() {
     </button>
     <div className="collapse navbar-collapse flex-row-reverse bd-highlight" id="navbarNav">
       <ul className="nav navbar-nav pull-xs-right">
-        <li className="nav-item active">
+        <li className="nav-item">
           
             <Link
               to="/"
@@ -29,14 +30,28 @@ function Navbar() {
             </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="portfolio.html">
-            <h5>Portfolio</h5>
-          </a>
+        <Link
+              to="/portfolio"
+              className={
+                window.location.pathname === "/portfolio"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              <h5>Portfolio</h5>
+            </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="contact.html">
-            <h5>Contact</h5>
-          </a>
+        <Link
+              to="/contact"
+              className={
+                window.location.pathname === "/contact"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              <h5>Contact</h5>
+            </Link>
         </li>
       </ul>
     </div>

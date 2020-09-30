@@ -1,0 +1,206 @@
+h1 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.collapse navbar-collapse {
+
+    margin: 30px;
+}
+
+.photo {
+    display:block;
+    margin:auto;
+    border-radius: 80px;
+}
+
+
+
+
+p {
+    text-align: justify;
+}
+
+.title {
+    text-align: center;
+}
+
+.pt-2 bg-success {
+    background-color: seashell;
+}
+
+body {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://www.educative.io/api/page/4633464658722816/image/download/5756614444318720);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social-icons {
+    text-align: center;
+    
+}
+
+.last_span {
+    margin: 30px;
+}
+
+.portfolio {
+    border: rgb(179, 232, 245);
+    border-style: solid;
+    text-align: center;
+    display: block;
+    background-size: cover;
+        background-repeat: no-repeat;
+
+}
+.textport {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+font-size: 30px
+}
+.texthome {
+    font-size: 25px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-justify: auto;
+}
+
+form {
+    margin: 30px;
+    padding: 30px;
+    font-size: 25px;
+}
+.modal-content {
+    width: 100%;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+.btndiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+.photo {
+    display:block;
+    margin:auto;
+    border-radius: 80px;
+    width: 40%;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 30px;
+        margin: 30px;
+        background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://www.educative.io/api/page/4633464658722816/image/download/5756614444318720);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    h1 {
+      font-size: 36px;
+      padding: 5px;
+    }
+    li {
+      padding: 5px;
+      display: block;
+    }
+
+  img {
+      text-align: center;
+      display: block;
+      background-size: cover;
+        background-repeat: no-repeat;
+  }
+  
+ 
+
+  .portfolio {
+    border: rgb(179, 232, 245);
+    display: block;
+    border-style: solid;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.modal-content {
+    width: 75%;
+    
+}
+}
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 30px;
+        margin: 30px;
+        background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://www.educative.io/api/page/4633464658722816/image/download/5756614444318720);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    h1 {
+      font-size: 36px;
+      padding: 5px;
+    }
+    li {
+      padding: 5px;
+      display: block;
+    }
+
+  
+ .portfolio {
+     text-align: center;
+     margin: auto;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+.port-card {
+    margin: 1rem 0.5rem;
+}
+.modal-content {
+    width: 75%;
+    
+}
+
+
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        padding: 20px;
+        margin: 20px;
+        background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://www.educative.io/api/page/4633464658722816/image/download/5756614444318720);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    h1 {
+      font-size: 36px;
+      padding: 5px;
+    }
+    li {
+      padding: 5px;
+      display: block;
+    }
+
+  
+ .portfolio {
+     text-align: center;
+     margin: auto;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ .modal-content {
+    width: 75%;
+    
+}
+
+
+}
+
+
