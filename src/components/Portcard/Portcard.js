@@ -4,13 +4,14 @@ function Portcard({
     picture,
     link,
     github,
-    description
+    description,
+    handleClick
 }) {
 
     return (
         <>
         <div class="col-lg-4 port-card">
-            <img class="portfolio" data-toggle="modal" data-target="#exampleModalCenter"
+            <img onClick={handleClick} class="portfolio" data-toggle="modal" data-target="#exampleModalCenter"
                 src={picture} width="300px"
                 height="200px" alt=""></img>
             <a class="btn title btn-info"

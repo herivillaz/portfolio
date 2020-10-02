@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 
 // Depending on the current path, this component sets the "active" className on the appropriate navigation link item
 function Navbar() {
   console.log(window.location.pathname);
+  const location = useLocation();
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-info">
     <a className="navbar-brand" href="#">
@@ -21,7 +22,7 @@ function Navbar() {
             <Link
               to="/"
               className={
-                window.location.pathname === "/" || window.location.pathname === "/about"
+               location.pathname === "/" ||location.pathname === "/about"
                   ? "nav-link active"
                   : "nav-link"
               }
@@ -33,7 +34,7 @@ function Navbar() {
         <Link
               to="/portfolio"
               className={
-                window.location.pathname === "/portfolio"
+               location.pathname === "/portfolio"
                   ? "nav-link active"
                   : "nav-link"
               }
@@ -45,7 +46,7 @@ function Navbar() {
         <Link
               to="/contact"
               className={
-                window.location.pathname === "/contact"
+               location.pathname === "/contact"
                   ? "nav-link active"
                   : "nav-link"
               }
