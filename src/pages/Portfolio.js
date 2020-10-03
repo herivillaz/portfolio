@@ -13,42 +13,54 @@ class Portfolio extends Component {
     isModalOpen: false,
     targetProject: {}
   };
- 
 
-  
+
+
 
   // When the component mounts, load the next dog to be displayed
   // componentDidMount() {
   //   this.loadNextDog();
   // }
+  closeModal = () => {
+    this.setState({ isModalOpen: false })
+  }
 
+  handleOnClick = project => {
+    console.log("isthisworking");
+    this.setState({ isModalOpen: true, targetProject: project }, () => console.log(this.state))
+  }
 
   render() {
-    const handleOnClick = project => {
-      console.log("isthisworking");
-      this.setState({isModalOpen:true})
-      this.setState({targetProject: project})
-          }
+
     return (
       <>
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <Portcard handleClick={() => handleOnClick(projects[0])} {...projects[0]}/>
-          <Portcard {...projects[1]}/>
-          <Portcard {...projects[2]}/>
-          <Portcard {...projects[3]}/>
-          <Portcard {...projects[4]}/>
-          <Portcard {...projects[5]}/>
-          <Portcard {...projects[6]}/>
-          <Portcard {...projects[7]}/>
-          <Portcard {...projects[8]}/>
-          <Portcard {...projects[9]}/>
-{this.state.isModalOpen ? <Modal project={this.state.targetProject} /> : <div/>}
-
-         <div class="col-lg-2"></div>
+      <div className="row">
+          <div className="col-lg-2"></div>
+          <div className="col-lg-8 bg-light text-dark">
+            <p className="textport">These are my Featured Projects made with learning and practicing.
+        <br />You can see the information by clicking on the image of the project.
+              <br />Or You can click on the buttons to go to the Code and Deployed version.
+            </p>
+          </div>
+          <div className="col-lg-2"></div>
         </div>
-        
-        
+        <div className="row">
+          <div className="col-lg-2"></div>
+          <Portcard handleClick={() => this.handleOnClick(projects[0])} {...projects[0]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[1])} {...projects[1]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[2])} {...projects[2]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[3])} {...projects[3]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[4])} {...projects[4]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[5])} {...projects[5]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[6])} {...projects[6]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[7])} {...projects[7]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[8])} {...projects[8]} />
+          <Portcard handleClick={() => this.handleOnClick(projects[9])} {...projects[9]} />
+          <div className="col-lg-2"></div>
+         {this.state.isModalOpen && <Modal closeModal={this.closeModal} project={this.state.targetProject} />}
+        </div>
+
+
 
       </>
     );
