@@ -7,7 +7,7 @@ import Col from "../components/Col";
 function About() {
   return (
     <div>
-      <Hero backgroundImage="https://www.educative.io/api/page/4633464658722816/image/download/5756614444318720">
+      <Hero className="hero" backgroundImage="https://www.educative.io/api/page/4633464658722816/image/download/5756614444318720">
       <img className="photo"
         src="/assetsREADME/portfoliodef.jpg"
         width="200px" alt="Heribert Villazana. Taken at New York in 2019">

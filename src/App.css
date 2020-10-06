@@ -82,14 +82,14 @@ img {
 }
 
 
-
-
-
 .photo {
     display:block;
     margin:auto;
     border-radius: 80px;
-    width: 30%;
+    width: 25%;
+}
+.hero {
+    height: auto;
 }
 
 @media (max-width: 500px) {
@@ -166,6 +166,7 @@ img {
     width: 75%;
     
 }
+
 
 
 }
