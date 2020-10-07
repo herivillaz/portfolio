@@ -9,7 +9,7 @@ import Wrapper from "./components/Wrapper";
 import "./App.css"
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div>
         <Navbar />
         <Wrapper>
