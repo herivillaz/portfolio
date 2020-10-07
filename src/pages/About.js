@@ -9,7 +9,7 @@ function About() {
     <div>
       <Hero className="hero" backgroundImage="https://www.educative.io/api/page/4633464658722816/image/download/5756614444318720">
       <img className="photo"
-        src="/assetsREADME/portfoliodef.jpg"
+        src="/portfolio/assetsREADME/portfoliodef.jpg"
         width="200px" alt="Heribert Villazana. Taken at New York in 2019">
           </img>
         <h1>Heribert Villazana</h1>
