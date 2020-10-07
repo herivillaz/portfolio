@@ -37,6 +37,9 @@ name="message"         placeholder="Your message here"></textarea>
     </div>
     <a href="index.html"><button class='bg-info'>submit</button></a>
   </form>
+  <div class="resume">
+  <a href="https://docs.google.com/document/d/174KZCil2UXMVn0QCU0R8VyFTPQjjlgJRa9nJnYxH5lM/edit?usp=sharing"><button class='bg-info' id='resume'>Download My Resume Here</button></a>
+  </div>
   </>
     );
   }

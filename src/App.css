@@ -91,6 +91,13 @@ img {
 .hero {
     height: auto;
 }
+.hero h1 {
+    padding-top: 0%;
+}
+.resume{
+    text-align: center;
+    font-size: 1.25rem;
+}
 
 @media (max-width: 500px) {
 
