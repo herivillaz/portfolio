@@ -20,8 +20,8 @@ function About() {
             <a class="social-link" href="https://github.com/herivillaz" target="_blank"><i class="fab fa-github fa-4x">
           </i></a>
         <span class="last_span"></span>
-        <a class="social-link" href="https://instagram.com/herivillaz" target="_blank"><i
-            class="fab fa-instagram fa-4x"></i></a>
+        <button><a href="mailto:herivillaz@gmail.com" method="POST" class="social-link"><i
+            class="far fa-envelope fa-4x"></i></a></button>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
@@ -51,8 +51,8 @@ function About() {
         But New York stole my heart, and for that, I am grateful". He states.
         Koala -how some friends call him- has been working hard in the city as a server/waiter, bartender in the
         Hospitality, food  beverages Industry. <br />
-        Currently, He is a student of the Coding Boot Camp program of Columbia University, working with dedication,
-        passion, becoming passionate about been a Web Developer, Full stack developer and UX design.
+        Currently, He is a <b>Full Stack Web Developer</b>  certified through the Coding Boot Camp of Columbia University, working with dedication,
+        passion, becoming passionate about it and MERN squema.
         </p>
           </Col>
         </Row>
